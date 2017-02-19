@@ -56,10 +56,10 @@ function parseUri(uri) {
     	uriParts.path = temp.substring(0, a);
     	temp = temp.slice(a+1);
     	a = temp.indexOf("#");
-
+    	//query
     	uriParts.query = temp.substring(0,a);
     	temp = temp.slice(a+1);
-
+    	//fragment
     	uriParts.fragment = temp;
     // my code ends here
 
